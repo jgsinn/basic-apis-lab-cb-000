@@ -13,4 +13,6 @@ class RepositoriesController < ApplicationController
       req.params['client_secret']= '00a9e52652c48534ff6b2bb58489c3cba3bbc6ab'
     end
   end
+
+  render 'search'
 end
