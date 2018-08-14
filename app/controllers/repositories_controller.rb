@@ -1,4 +1,4 @@
-require 'faraday'
+
 
 class RepositoriesController < ApplicationController
 
