@@ -14,7 +14,7 @@ class RepositoriesController < ApplicationController
     end
 
     body_hash = JSON.parse(@resp.body)
-    @repositories = body_hash["items"]
+    @repositories = body_hash["body"]["items"]
 
   render 'search'
 
