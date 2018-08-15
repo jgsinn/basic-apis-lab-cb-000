@@ -6,6 +6,16 @@
 <% end %>
 
 <div>
-<%= @resp.body if @resp %>
+  <% if @repositories %>
+    <ul>
+    <% @repositories.each do |repository| %>
+      <li>
+        <%= repository["name"] %><br>
+        <%= repository["url"] %><br>
+        <%= repository["description"] %><br>
+      </li>
+    <% end %>
+    </ul>
+  <% end %>
 </div>
 
